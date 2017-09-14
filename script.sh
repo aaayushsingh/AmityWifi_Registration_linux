@@ -1,5 +1,4 @@
 # no shebang, already modified file to make it executable
-FILE="log.txt";
 dir="$(pwd)";
 uuid="get uuid";
 #add prompt to get uname and password
