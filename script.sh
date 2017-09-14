@@ -4,9 +4,10 @@ uuid="get uuid";
 #add prompt to get uname and password
 uname="amizone username";
 passwd="passwd"
-macaddr="$(sudo ifconfig wlan0 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}' | tr '[:lower:]' '[:upper:]')";
 
-if [ `id -u` -ne 0 ] ; then echo "Please run as root" ; sudo /bin/bash $dir/trial.sh ; exit 1 ; fi
+if [ `id -u` -ne 0 ] ; then echo "Please run as root" ; sudo /bin/bash $dir/script.sh ; exit 1 ; fi
+
+macaddr="$(sudo ifconfig wlan0 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}' | tr '[:lower:]' '[:upper:]')";
 
 cat > log <<EOL
 [connection]
