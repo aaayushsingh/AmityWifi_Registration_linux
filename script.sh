@@ -46,3 +46,4 @@ cat log
 #sudo chmod u=rw,g=,o= log
 #sudo /etc/NetworkManager/system-connections/AmityWiFi
 #sudo cp log /etc/NetworkManager/system-connections
+#sudo shutdown -r now
