@@ -5,6 +5,8 @@ dir="$(pwd)";
 #verify if this is the uuid for all the devices, fix if needed
 uuid="6e71eb05-8d22-48e2-be90-5efaf295eacb";
 
+if [ `id -u` -ne 0 ] ; then echo "Please run as root" ; sudo /bin/bash $dir/script.sh ; exit 1 ; fi
+
 if [ $# -eq 0 ]
     then
         read -p 'Enter Amizone username : ' uname;
@@ -12,9 +14,6 @@ if [ $# -eq 0 ]
 fi
 echo "Password (enter 'password' if you haven't modified or don't know.)"
 read -sp 'Password: ' passwd
-
-
-if [ `id -u` -ne 0 ] ; then echo "Please run as root" ; sudo /bin/bash $dir/script.sh ; exit 1 ; fi
 
 macaddr="$(sudo ifconfig wlan0 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}' | tr '[:lower:]' '[:upper:]')";
 
