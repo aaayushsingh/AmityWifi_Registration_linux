@@ -1,0 +1,29 @@
+[connection]
+id=AmityWiFi
+uuid=get uuid
+type=wifi
+permissions=
+
+[wifi]
+hidden=true
+mac-address=40:E2:30:26:0B:4F
+mac-address-blacklist=
+ssid=AmityWiFi
+
+[wifi-security]
+key-mgmt=wpa-eap
+
+[802-1x]
+eap=peap;
+identity=amizone username@amity.edu.in
+password=passwd
+phase2-auth=mschapv2
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto

@@ -1,6 +1,8 @@
-# no shebang, already modified file to make it executable
+#!/bin/sh
+
 dir="$(pwd)";
 uuid="get uuid";
+sleep 10;
 #add prompt to get uname and password
 uname="amizone username";
 passwd="passwd"
