@@ -51,10 +51,10 @@ EOL
 
 cat log
 #commented because still testing.further tests on WiFiRegister network
-#sudo chmod u=rw,g=,o= log
-#sudo rm /etc/NetworkManager/system-connections/AmityWiFi
-#sudo mv log AmityWiFi
-#sudo cp AmityWiFi /etc/NetworkManager/system-connections
-#echo "Done, Restarting the system in 10 seconds, press Ctrl+c to cancel."
-#sleep 10
-#sudo shutdown -r now
+sudo chmod u=rw,g=,o= log
+sudo rm /etc/NetworkManager/system-connections/AmityWiFi
+sudo mv log AmityWiFi
+sudo cp AmityWiFi /etc/NetworkManager/system-connections
+echo "Done, Restarting the system in 10 seconds, press Ctrl+c to cancel."
+sleep 10
+sudo shutdown -r now
