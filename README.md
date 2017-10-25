@@ -7,7 +7,7 @@ connects to hidden AmityWiFi.
 ### Steps
 
 1. Run this file as `sudo` and replace `amizone-username` with your amizone username. </br>
-   </t>`sudo ./script.sh amizone-username`
+   </t>`sudo ./ayu.sh amizone-username`
 2. restart, although ideally this will automatically restart the system.
 3. You are now connected to AmityWiFi
 
